@@ -1,0 +1,9 @@
+PreCommit:
+  ALL:
+    on_warn: fail
+    exclude:
+      - 'spec/fixtures/**/*'
+      - 'lib/extensions/**/*'
+      - 'docs/**/*'
+  Reek:
+    enabled: true

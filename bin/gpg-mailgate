@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+begin
+  require File.join(File.dirname(__FILE__), '..', 'lib', 'gpg_mailgate.rb')
+
+  GpgMailgate::Config.load
+
+  puts GpgMailgate.encrypt(ARGF.read)
+rescue
+  # No matter how unexpected error is, always return plain message
+  puts ARGF.read
+end

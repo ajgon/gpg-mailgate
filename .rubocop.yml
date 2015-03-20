@@ -1,0 +1,9 @@
+AllCops:
+  Exclude:
+    - 'spec/fixtures/**/*'
+    - 'lib/extensions/**/*'
+Metrics/LineLength:
+  Max: 120
+Style/FileName:
+  Exclude:
+    - 'bin/*'
