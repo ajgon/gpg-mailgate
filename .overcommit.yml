@@ -7,3 +7,9 @@ PreCommit:
       - 'docs/**/*'
   Reek:
     enabled: true
+    exclude:
+      - 'lib/extensions/**/*'
+      - 'spec/helpers.rb'
+  TrailingWhitespace:
+    exclude:
+      - 'spec/fixtures/**/*'

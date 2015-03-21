@@ -3,6 +3,7 @@ SimpleCov.start
 require 'codeclimate-test-reporter'
 require 'rspec'
 require 'gpg_mailgate'
+require 'helpers'
 CodeClimate::TestReporter.start
 
 # Don't you dare to use this key anywhere!
